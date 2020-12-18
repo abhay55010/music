@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Abhi Site</title>
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body background = wallpaper.jpg style = "background-repeat:no-repeat;background-size:1500px 1000px">
+<div class = "container">
+	<input type = "text" placeholder = "Enter Bhajan or Song" id= "nm">
+	<i class = "fas fa-search"></i>
+</div>
+	<script>
+	function cond(){
+		var a = document.getElementById("nm").value;
+		if (a == "Song"){
+			btnclicked();
+	}
+		else if (a == "Bhajan"){
+			bhajan();
+		
+	}
+
+		else{
+
+			document.write("Invalid Search");
+	}
+	
+}
+
+	function btnclicked(){
+		document.location.href="music.html";
+}
+
+
+
+	function bhajan(){
+		document.location.href="bhajan.html";
+}
+
+	</script>
+<div class = "button">
+	<button type = "button" onclick = "cond()">Search</button>
+</div>
+</body>
+</html>
