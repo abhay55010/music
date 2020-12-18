@@ -1,0 +1,12 @@
+div.container{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+}
+div.button{
+	top:50%;
+	left:59%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+}
